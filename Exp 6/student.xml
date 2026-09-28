@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE students SYSTEM "student.dtd">
+
+<students>
+
+    <student>
+        <enrollment>12345</enrollment>
+        <name>Aman</name>
+        <mobile>9876543210</mobile>
+        <email>aman@gmail.com</email>
+    </student>
+
+    <student>
+        <enrollment>12346</enrollment>
+        <name>Rahul</name>
+        <mobile>9876543211</mobile>
+        <email>rahul@gmail.com</email>
+    </student>
+
+</students>
