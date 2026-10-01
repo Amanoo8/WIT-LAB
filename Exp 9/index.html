@@ -6,14 +6,16 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="" id="form">
-        <label for="inp">Enter any text : </label>
-        <input type="text" name="inp" id="inp">
+    <form action="process.php" method="post">
+
+        <label>Enter any text:</label>
+        <input type="text" name="text">
+
         <br><br>
-        <button type="submit" id="btn1">Submit</button>
-        <br><br>
-        <span id="sp"></span>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
     </form>
-    <script src="index.js"></script>
 </body>
 </html>

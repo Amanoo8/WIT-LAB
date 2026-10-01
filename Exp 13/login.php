@@ -2,10 +2,14 @@
 include "db.php";
 
 if (isset($_POST['login'])) {
+
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    $sql = "SELECT * FROM users WHERE username='$username'";
+    $username = strtolower($username);
+
+    $sql = "SELECT * FROM users WHERE LOWER(username)='$username' LIMIT 1";
+
     $result = mysqli_query($conn, $sql);
 
     if (mysqli_num_rows($result) == 1) {
@@ -29,11 +33,13 @@ if (isset($_POST['login'])) {
 <head>
     <title>Login</title>
 </head>
+
 <body>
 
 <h2>Login Form</h2>
 
 <form method="post">
+
     Username:
     <input type="text" name="username" required>
     <br><br>
@@ -43,6 +49,7 @@ if (isset($_POST['login'])) {
     <br><br>
 
     <input type="submit" name="login" value="Login">
+
 </form>
 
 </body>
