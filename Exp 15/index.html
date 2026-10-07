@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Responsive Web Page</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">My Website</a>
+
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+
+        <div class="text-center mb-4">
+            <h1 class="text-primary">Welcome to My Website</h1>
+            <p class="lead">
+                This is a responsive web page created using Bootstrap.
+            </p>
+        </div>
+
+
+        <!-- Responsive Cards -->
+        <div class="row g-4">
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow">
+                    <div class="card-body text-center">
+                        <h3 class="card-title">HTML</h3>
+                        <p class="card-text">
+                            HTML is used to create the structure of web pages.
+                        </p>
+                        <button class="btn btn-primary">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow">
+                    <div class="card-body text-center">
+                        <h3 class="card-title">CSS</h3>
+                        <p class="card-text">
+                            CSS is used to style and design web pages.
+                        </p>
+                        <button class="btn btn-success">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow">
+                    <div class="card-body text-center">
+                        <h3 class="card-title">Bootstrap</h3>
+                        <p class="card-text">
+                            Bootstrap helps create responsive and attractive
+                            web pages quickly.
+                        </p>
+                        <button class="btn btn-danger">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center mt-5 p-3">
+        <p class="mb-0">
+            © 2026 My Website | Bootstrap Responsive Page
+        </p>
+    </footer>
+
+
+    <!-- Bootstrap JavaScript -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</body>
+</html>
